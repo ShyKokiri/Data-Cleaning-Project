@@ -68,6 +68,7 @@ ALTER TABLE world_layoffs.layoffs_staging2
 MODIFY COLUMN `date` DATE;
 
 <h3>🔺 Tratamento de Nulos:</h3> <p>Substituição de strings vazias por <code>NULL</code> e preenchimento com auto-joins quando possível.</p>
+
 UPDATE world_layoffs.layoffs_staging2
 SET industry = NULL
 WHERE industry = '';
@@ -94,5 +95,5 @@ DROP COLUMN row_num;
 🔸stage
 🔸country
 🔸funds_raised_millions
-```
+
 
