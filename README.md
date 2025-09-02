@@ -39,7 +39,6 @@ Desafio este inspirado em boas práticas de engenharia de dados e análise de da
 Usamos a função <code>ROW_NUMBER()</code> com <code>PARTITION BY</code> para identificar registros duplicados e removê-los.
 </p>
 
-```sql
 WITH duplicate_cte AS (
   SELECT *,
     ROW_NUMBER() OVER(
